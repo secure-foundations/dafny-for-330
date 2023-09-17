@@ -1,6 +1,6 @@
 predicate array_equal(a:array?<int>, b:array?<int>)
-    reads a;
-    reads b;
+    reads a
+    reads b
 {
           (a == null && b == null) 
        || (a != null && b != null && a[..] == b[..])
